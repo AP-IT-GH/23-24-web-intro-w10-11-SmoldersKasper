@@ -13,8 +13,7 @@ let koffieIcon = L.icon({
     iconUrl: "assets/coffee-icon.png",
     shadowUrl: "assets/coffee-icon-shadow.png",
 
-    iconSize:     [38, 50],
-    shadowSize:   [38, 50],
+    
     iconAnchor:   [0, 50],
     shadowAnchor: [0, 50],
     popupAnchor:  [-3, -76]

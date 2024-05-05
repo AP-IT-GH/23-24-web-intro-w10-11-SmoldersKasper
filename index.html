@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- reset.css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap CSS icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- eigen geschreven css voor jouw html-bestand -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- LEAFLET -->
+    <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <!-- voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
+    <link rel="stylesheet" href="css/mapStyle.css">
+    <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
+    <script src="js/mapScript.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./assets/coffee.png" alt="Koffie & co" width="100" height="100">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="recepten.html">recepten</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="shop.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  shop
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="shop.html">shop</a></li>
+                  <li><a class="dropdown-item" href="check-out.html">checkout</a></li>
+                  <li><a class="dropdown-item" href="klanten.html">klanten
+                  </a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
+              <button class="btn btn-sm btn-outline-secondary" type="submit">zoeken</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+      <header class="m-5 row">
+        <h1 class="display-2 col text-center koffiebruin">may the coffee<br>be with you</h1>
+      </header>
+
+      <div class="container">
+        <div class="row">
+          <main class="col-md-9 pe-3">
+            <section class="row">
+                <section class="col col-12 col-md-6">
+                    <h2>Koffiebonen</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eaque quo laudantium vero fugiat culpa quasi modi soluta error, odit eius debitis numquam voluptatum voluptas harum similique perferendis animi? Officia veritatis aut accusantium maxime hic ut rerum praesentium quasi accusamus pariatur, consectetur saepe eligendi iusto beatae placeat fugiat totam. Mollitia, itaque quasi, dolorem praesentium qui cupiditate fugit aliquam nisi debitis labore magni incidunt neque eos soluta modi quam nihil illo autem? Temporibus neque ut voluptas excepturi unde, eaque rem suscipit! Molestias enim provident ea, facilis veniam facere autem laborum est deleniti placeat iste repudiandae repellendus nulla excepturi quam! Quas, laborum.
+                    </p>
+                </section>
+                <section class="col col-12 col-md-6">
+                    <h2>Koffiemolen</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore blanditiis hic cum quis. Assumenda aspernatur molestias hic doloremque et id cumque, nesciunt natus eveniet debitis perferendis pariatur quasi iusto sed neque odit voluptatem quas magni iure consequatur similique. Enim repellendus et omnis deleniti dolores illo natus corporis cumque, rem unde excepturi ab a error magni expedita minus eligendi quis dolorem! Error nisi officiis iure, perferendis maiores consectetur beatae! Molestias tempora sed esse praesentium nesciunt mollitia, dolorem accusamus quibusdam aliquid quis distinctio modi numquam aliquam asperiores dolor corrupti explicabo, consequuntur repellendus quo dolore. Cumque rem labore natus quas corrupti veniam ad!
+                    </p>
+                </section>
+            </section>
+            <section class="row border-top border-bottom py-2">
+                <section class="col">
+                    <figcaption>
+                        <img src="assets/pexels-6-tom-swinnen.jpg" alt="">
+                    </figcaption>
+                </section>
+            </section>
+          </main>
+    
+          <aside class="col-md-3 border-start ps-5">
+            <h2 class="text-uppercase fs-4 fw-bolder pt-3">contact</h2>
+            <p>COFFEE shop<br>
+              email <a href="mailto:mail@ap-coffeeshop.be">mail@ap-coffeeshop.be</a><br>
+              phone +32 123 / 45 67 89</p>
+            <ul class="list-inline socials">
+              <li class="list-inline-item">
+                <a href="https://www.youtube.com" target="_blank">
+                  <i class="bi bi-youtube koffiebruin fs-3"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com" target="_blank">
+                  <i class="bi bi-instagram koffiebruin fs-3"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com" target="_blank">
+                  <i class="bi bi-facebook koffiebruin fs-3"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/" target="_blank">
+                  <i class="bi bi-twitter koffiebruin fs-3"></i>
+                </a>
+              </li>
+            </ul>
+          </aside>
+    
+        </div>
+      </div>
+    
+      <footer class="container-fluid text-center h6 small p-4">&copy; 2024 koffie enzo</footer>
+    
+</body>
+</html>
